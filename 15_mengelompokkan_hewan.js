@@ -17,12 +17,12 @@ function groupAnimals(animals) {
         count = true
         for(let b=0; b<result.length; b++){
             if(data[a][0] == result[b][0][0]) {
-                console.log(data[a][0] == result[b][0][0]);
+            
             result[b].push(data[a])
             count = false
             }
         }
-        if(count === true) result.push([data[a]])
+        if(count) result.push([data[a]])
     }
   return result.sort()
 }
