@@ -6,7 +6,7 @@ function dataHandling2(arr) {
     arr.splice(4, 1, 'Pria', 'SMA Internasional Metro')
     console.log(arr);
     let date = arr[3].split('/');
-    let date2 = Array.prototype.slice.apply(date);
+    let date2 = date.slice(); 
     let [day, month, year] = date;
     
     switch (month) {
